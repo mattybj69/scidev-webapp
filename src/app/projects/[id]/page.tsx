@@ -48,7 +48,7 @@ export default function ProjectPage({ params }: { params: { id: string } }) {
         id: `week-${format(weekStart, 'yyyy-MM-dd')}`,
         weekStart,
         weekEnd,
-        status: isCurrentWeek ? 'current' : 'missed', // TODO: Check if report exists in Firebase
+        status: isCurrentWeek ? 'current' as const : 'missed' as const, // TODO: Check if report exists in Firebase
       };
     });
 
