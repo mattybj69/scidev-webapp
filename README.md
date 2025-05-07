@@ -1,5 +1,7 @@
 # SciDev WebApp
 
+[![Deploy to Firebase](https://github.com/mattybj69/scidev-webapp/actions/workflows/firebase-hosting-deploy.yml/badge.svg)](https://github.com/mattybj69/scidev-webapp/actions/workflows/firebase-hosting-deploy.yml)
+
 A web application for managing water treatment projects and weekly reports.
 
 ## Tech Stack
