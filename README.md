@@ -51,11 +51,24 @@ npm run dev
 
 ## Deployment
 
-The application is deployed using Firebase Hosting. To deploy:
+The application is automatically deployed to Firebase Hosting when changes are pushed to the main branch.
 
+### Manual Deployment
+If you need to deploy manually:
 ```bash
 firebase deploy
 ```
+
+### Automated Deployment
+The repository is set up with GitHub Actions to automatically deploy to Firebase Hosting:
+- Pushes to `main` branch trigger a deployment
+- Pull requests create preview deployments
+- Environment variables are securely stored in GitHub Secrets
+
+To set up automated deployments in a new environment:
+1. Generate a Firebase Service Account key from Firebase Console
+2. Add the required secrets to GitHub repository settings
+3. Push to main branch to trigger deployment
 
 ## License
 
